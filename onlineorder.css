@@ -1,0 +1,128 @@
+.breakfast-section {
+    position: relative;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+}
+
+.section-order-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
+}
+.food-container {
+    display: flex; /* Allow items to sit next to each other */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping to new lines */
+    scroll-snap-type: x mandatory; /* Enable snapping to food items */
+  }
+
+  .this-order-title{
+    font-size: 3.25rem;
+    padding: 10px;
+    background-color:#e0bfa8;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 7.5vh;
+  }
+.food-item {
+    position: relative; /* Add this line */
+    width: 150px;
+    height: 210px;
+    flex: 0 0 auto;
+    margin-right: 10px;
+    background-color: #e0bfa8;
+    border-radius: 10px;
+}
+
+.food-item img {
+    width: 150px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.add-to-cart {
+    position: absolute; /* Add this line */
+    bottom: 0; /* Add this line */
+    right: 0; /* Add this line */
+    padding: 5px; /* Add or adjust padding */
+}
+
+.add-to-cart-btn {
+    background-color: #dcedc8;
+    border: none;
+    padding: 4px 8px; /* Adjust padding */
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px; /* Adjust font size */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.navigation {
+    top: 50%;
+    margin-right: 2.5vw;
+    margin-bottom: 5vh;
+}
+.navigation button{
+    padding: 7.5px;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.order-online-container{
+    margin-top: 7.5vh;
+    margin-bottom: 5vh;
+}
+
+
+.food-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item-name {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.plus,
+.minus {
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.quantity {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+
+.outputprice{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.total-order-price{
+    font-size: 2rem;
+    margin-top: 1vh;
+    margin-bottom: 15vh;
+}
+

@@ -1,0 +1,58 @@
+.enter-email h1{
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform:uppercase ;
+    background-color: #e0bfa8;
+    padding: 1.6vh 16vw;
+    margin-bottom: 3vh;
+}
+
+.enter-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.enter-email p{
+    font-weight: 400;
+    margin-bottom: 5vh;
+}
+
+
+.email-signup-form label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+}
+.input-label{
+    margin-top: 1.5vh;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit-button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center
+}
+
+label i{
+    color: red;
+    font-size: 0.9rem;
+}
+
+#success-message{
+    font-size: 3rem;
+    color: green;
+    text-transform: uppercase;
+    margin-top: 10vh;
+    margin-bottom: 28.5vh;
+}

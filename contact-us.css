@@ -1,0 +1,76 @@
+.contact-us-main h1{
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform:uppercase ;
+    background-color: #e0bfa8;
+    padding: 1.6vh 16vw;
+    margin-bottom: 3vh;
+}
+
+.contact-us-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.contact-us-main p{
+    font-weight: 400;
+    margin-bottom: 5vh;
+}
+
+
+.contact-container label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+}
+
+
+/* Styles for the form */
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+.send-contact-us{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 3vh;
+}
+
+.form-container{
+    font-size: 0.8rem;
+} 
+
+.form-container label{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.form-container label textarea{
+    height: 15vh;
+}
+
+label i{
+    color: red;
+}
+
+.submit-button{
+    cursor:pointer;
+}
+
+
+#success-message{
+    font-size: 3rem;
+    color: green;
+    text-transform: uppercase;
+    margin-top: 10vh;
+    margin-bottom: 28.5vh;
+}

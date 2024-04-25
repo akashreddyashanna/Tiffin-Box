@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiffin Box | Home</title>
+    <link rel="shortcut icon" href="./images/homepage/RestuarantLogo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="./homeStyle.css">
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <header id="navBar" style="margin-bottom: 2vh;">
+        <nav>
+            <div class="Nav-container ">
+                <ul class="NavBar-Items">
+                    <img src="./images/homepage/RestuarantLogo.png" alt="" class="Top-Title-Image" style="cursor: pointer;" onclick="reloadHomepage()">
+                    <div class="NavBar-Items-secondary-color" style="display: flex;">
+                        <li><a href="#" class="ubuntu-regular Locations">Locations <i class="fas fa-caret-down"></i></a>  <ul class="locations-dropdown">  
+                                <li><a href="locations.html?city=hyderabad">Hyderabad</a></li>
+                                <li><a href="locations.html?city=chennai">Chennai</a></li>
+                                <li><a href="locations.html?city=mumbai">Mumbai</a></li>
+                                <li><a href="locations.html?city=bengaluru">Bengaluru</a></li>
+                                <li><a href="locations.html?city=delhi">Delhi</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./reservation.html" class="ubuntu-regular Reservation">Reservation</a></li>
+                        <li><a href="./event-party.html" class="ubuntu-regular Private-parties">Private parties & events</a></li>
+                        <li><a href="./menu.html" class="ubuntu-regular Menu">Menu</a></li>
+                        <li><a href="./our-story.html" class="ubuntu-regular Our-story ">Our story</a></li>
+                        <li><a href="./onlineorder.html" class="Nav-Item-Order_Online ubuntu-regular">order online</a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!--Slider Section-->
+    <div class="slider-container" >
+        <div class="slider">
+            <div class="slide">
+                <img src="./images/home-pag-top/hyderabadifood.png" alt="Rajesthani Dish 1">
+                <div class="slide-info">
+                    <h3 class="slider-food-title ubuntu-regular">Hyderabadi Biryani: A Royal Delight</h3>
+                    <p class="ubuntu-regular">Savor the regal flavors of Hyderabadi Biryani, an iconic dish that embodies the culinary opulence of Hyderabad. Crafted with fragrant Basmati rice, succulent meat, and a blend of aromatic spices, our Biryani promises an exquisite dining experience. Delight in the legacy of Nizami cuisine, renowned for its rich heritage and irresistible taste.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./images/home-pag-top/chetnadchicken.png" alt="Rajesthani Dish 2">
+                <div class="slide-info">
+                    <h3 class="slider-food-title ubuntu-regular">Chettinad Chicken: Spicy South Indian Indulgence</h3>
+                    <p class="ubuntu-regular">Indulge in the fiery flavors of Chettinad Chicken, a signature dish hailing from the vibrant kitchens of Tamil Nadu. Infused with a myriad of spices and traditional Chettinad masala, our chicken curry offers a tantalizing journey for your taste buds. Experience the culinary legacy of South India, where bold spices and rich heritage converge to create an unforgettable dining experience.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./images/home-pag-top/south-tiffins.png" alt="Rajesthani Dish 2">
+                <div class="slide-info">
+                    <h3 class="slider-food-title ubuntu-regular">South Indian Tiffin Treasures</h3>
+                    <p class="ubuntu-regular"> Explore the essence of South India with our delightful tiffin offerings. From savory dosas to aromatic idlis, experience the authentic flavors of the region. Dive into a culinary journey filled with tradition and taste.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./images/home-pag-top/punjabi-food.png" alt="Rajesthani Dish 2">
+                <div class="slide-info">
+                    <h3 class="slider-food-title ubuntu-regular">Sarson da Saag: A Taste of Punjab</h3>
+                    <p class="ubuntu-regular">Experience the essence of Punjab with our signature Sarson da Saag, a traditional delicacy made from fresh mustard greens and spices. Indulge in the rich flavors and cultural heritage of this beloved Punjabi dish, cherished for its unique taste and wholesome goodness.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./images/home-pag-top/dalbai-churma.png" alt="Rajesthani Dish 2">
+                <div class="slide-info">
+                    <h3 class="slider-food-title ubuntu-regular">Rajasthani Delights: Dal Baati Churma</h3>
+                    <p class="ubuntu-regular">Savor the regal flavors of Rajasthan with our signature dish, Dal Baati Churma. This iconic Rajasthani trio combines hearty dal, flaky baatis, and sweet churma, creating a symphony of taste and tradition on your plate. Experience the royal cuisine of Rajasthan, where every bite tells a story of heritage and hospitality.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./images/home-pag-top/sweets.png" alt="Rajesthani Dish 2">
+                <div class="slide-info">
+                    <h3 class="slider-food-title ubuntu-regular">Savor the Sweet Symphony: Exploring India's Dessert Delights</h3>
+                    <p class="ubuntu-regular">Dive into a world of sweetness with our tantalizing collection of Indian desserts. From the iconic richness of gulab jamuns to the delicate sweetness of rasgullas, each treat is a harmonious blend of flavors and textures that capture the essence of India's culinary heritage. Let your taste buds dance with joy as you explore the diverse and delightful world of Indian sweets, where every bite is a melody of happiness.</p>
+                </div>
+            </div>
+            </div>
+            <button class="prev-btn">&#10094;</button>
+            <button class="next-btn">&#10095;</button>
+    </div>
+
+    <!--Order Online Label-->
+
+    <div class="online-order-label-HomePage">
+        <h1 class="ubuntu-regular">Order Online</h1><br>
+        <a href="./onlineorder.html"><p class="ubuntu-regular element1"><span class="Takeout_Delivery">Takeout & delivery </span><span class="arrow-Animation">→</span></p></a>
+    </div>
+
+    <!-- Reservations -->
+    <div class="c-split">
+        <div class="c-split__col c-split__col--empty">
+            <div class="c-split__col-inner" style="margin-left: -0.75vw;">
+                <div class="c-split__image" role="img" aria-label="a group of people posing for a bottle of wine"><img src="./images/homepage/reserationimage.jpeg" alt="" style="padding-left: 0.75vw;"></div>
+            </div>
+        </div>
+        <div class="c-split__col" style="padding: 40px;">
+            <div class="c-split__col-inner ">
+                <div class="c-split__content content">
+                    <h2 class="h2 c-split__heading" style="padding:   30px 0px;">Reservations</h2>
+                    <p>Let us host your special party. We love doing things like that.</p>
+                    <a href="./reservation.html"><p class="ubuntu-regular element1" style="margin-top: 65px;"><span class="Takeout_Delivery">Reserve now</span><span class="arrow-Animation" style="color: #333;">→</span></p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <!-- About Us -->
+        <div class="c-split about-us-section" style="margin-bottom: 2.5vh;" >
+            <div class="c-split__col" style="margin-left: 26.75vw;">
+                <div class="c-split__col-inner">
+                    <div class="c-split__content content">
+                        <h2 class="h2 c-split__heading" style="padding:   30px 0px;">About Us</h2>
+                        <a href="./our-story.html"><p class="ubuntu-regular element1" style="margin-top: 40px;"><span class="about-us-cta" style="padding-right: 30px;">Read more</span><span class="arrow-Animation">→</span></p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-split__col c-split__col--empty">
+                <div class="c-split__col-inner">
+                    <div class="c-split__image" role="img" aria-label="team discussing ideas"><img src="./images/homepage/about-us-image.png" alt="" style="padding-left: 0.75vw;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- OUR STORY -->
+            <div class="our-story-home" style="margin-bottom: 2.5vh;">
+            <div class="overlay">
+                <h2 class="overlay-text">Savor Authentic Indian Flavors in a Traditional Tiffin Box
+                </h2>
+                <a href="./our-story.html">
+                    <p class="ubuntu-regular element1" style="margin-top: 0;">
+                        <span class="about-us-cta" style="padding-right: 30px;text-transform: uppercase;">Our Story</span>
+                        <span class="arrow-Animation">→</span>
+                    </p>
+                </a>
+            </div>
+            </div>
+
+    <!--Pictures of the food and customers-->
+    <div class="instagram-grid">
+        <div class="instagram-grid__item">
+            <div class="image1">
+                <div class="image-overlay"></div>
+                <img src="./images/home-page-bottom/1st-image.png" alt="Image 1">
+            </div>
+        </div>
+        <div class="instagram-grid__item">
+            <div class="image2">
+                <div class="image-overlay"></div>
+                <img src="./images/home-page-bottom/2nd-image.png" alt="Image 2">
+            </div>
+        </div>
+        <div class="instagram-grid__item">
+            <div class="image3">
+                <div class="image-overlay"></div>
+                <img src="./images/home-page-bottom/3rd-image.png" alt="Image 3">
+            </div>
+        </div>
+        <div class="instagram-grid__item">
+            <div class="image4">
+                <div class="image-overlay"></div>
+                <img src="./images/home-page-bottom/4th-image.png" alt="Image 4">
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <footer class="site-footer">
+        <div class="site-footer-primary">
+            <div class="container">
+                <ul class="social-links" style="margin-left: 30px;">
+                    <li><a href="https://www.facebook.com/YourFacebookPage" target="_blank" rel="noopener"><span class="sr-only"><img src="https://www.svgrepo.com/show/299425/facebook.svg" alt=""></span></a></li>
+                    <li><a href="https://www.instagram.com/YourInstagramPage/" target="_blank" rel="noopener"><span class="sr-only"><img src="https://www.svgrepo.com/show/303154/instagram-2016-logo.svg" alt=""></span></a></li>
+                    <li><a href="https://twitter.com/YourTwitterPage" target="_blank" rel="noopener"><span class="sr-only"><img src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-1024.png" alt=""></span></a></li>
+                </ul>
+                <nav class="site-nav" style="margin-right: 28px;">
+                    <ul class="footer-nav-menu" id="Footer-Menu">
+                        <li><a href="./contact-us.html" class="ubuntu-regular contact-us">Contact Us</a></li>
+                        <li><a href="./special-events.html" class="ubuntu-regular special-events">Special Events</a></li>
+                        <li><a href="./news.html" class="ubuntu-regular news-and-updates">News & Updates</a></li>
+                        <li><a href="./signup.html" class="ubuntu-regular Email-Class-Footer">Email Signup</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <div class="site-footer-secondary">Copyright © Tiffin Box</div>
+
+    <!-- JavaScript for Animations -->
+    <script src="./homeIndex.js"></script>
+</body>
+</html>

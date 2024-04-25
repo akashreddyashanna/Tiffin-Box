@@ -1,0 +1,48 @@
+.top-image-section img{
+    width: 100%;
+    height: 80vh;
+}
+.top-image-section{
+    margin-bottom: 5vh;
+}
+.the-story {
+    position: relative; /* Ensure the positioning context for pseudo-element */
+    margin-left: 15vw;
+    margin-right: 15vw;
+    text-align: center;
+    margin-bottom: 15vh;
+    margin-top: 15vh;
+    padding: 5vh;
+}
+
+.the-story::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Position the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(205, 200, 200, 0.514); /* Transparent black background */
+    z-index: -1; /* Behind the content */
+}
+
+.the-story h1 {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 3vh;
+}
+
+.the-story p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #333;
+    position: relative; /* Ensure text is above pseudo-element */
+    z-index: 1; /* Ensure text is above pseudo-element */
+}
+
+.text-in-story{
+    font-weight: 300;
+    font-size: 1.1rem;
+}

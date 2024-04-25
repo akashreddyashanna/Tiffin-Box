@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiffin Box | Menu</title>
+    <link rel="shortcut icon" href="./images/homepage/RestuarantLogo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="./homeStyle.css">
+    <link rel="stylesheet" href="./menu.css">
+ </head>
+<body>
+
+    <!-- Navigation Section -->
+    <header id="navBar" style="margin-bottom: 2vh;">
+        <nav>
+            <div class="Nav-container ">
+                <ul class="NavBar-Items">
+                    <img src="./images/homepage/RestuarantLogo.png" alt="" class="Top-Title-Image" style="cursor: pointer;" onclick="reloadHomepage()">
+                    <div class="NavBar-Items-secondary-color" style="display: flex;">
+                        <li><a href="./index.html" class="ubuntu-regular Locations">Locations <i class="fas fa-caret-down"></i></a>  <ul class="locations-dropdown">  
+                                <li><a href="locations.html?city=hyderabad">Hyderabad</a></li>
+                                <li><a href="locations.html?city=chennai">Chennai</a></li>
+                                <li><a href="locations.html?city=mumbai">Mumbai</a></li>
+                                <li><a href="locations.html?city=bengaluru">Bengaluru</a></li>
+                                <li><a href="locations.html?city=delhi">Delhi</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./reservation.html" class="ubuntu-regular Reservation">Reservation</a></li>
+                        <li><a href="./event-party.html" class="ubuntu-regular Private-parties">Private parties & events</a></li>
+                        <li><a href="./menu.html" class="ubuntu-regular Menu">Menu</a></li>
+                        <li><a href="./our-story.html" class="ubuntu-regular Our-story ">Our story</a></li>
+                        <li><a href="./onlineorder.html" class="Nav-Item-Order_Online ubuntu-regular">order online</a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Menu -->
+    <div class="main-menu-container">
+        <h1 class="menu-title ubuntu-regularv">MENUS</h1>
+        <div class="menu-arrows">
+            <a href="#" onclick="showMenu('breakfast')">
+              <p class="ubuntu-regular element1" style="margin-top: 0;">
+                <span class="about-us-cta" style="padding-right: 30px;text-transform: uppercase;">Breakfast</span>
+                <span class="arrow-Animation">→</span>
+              </p>
+            </a>
+            <a href="#" onclick="showMenu('lunch')">
+              <p class="ubuntu-regular element1" style="margin-top: 0;">
+                <span class="about-us-cta" style="padding-right: 30px;text-transform: uppercase;">Lunch & Dinner</span>
+                <span class="arrow-Animation">→</span>
+              </p>
+            </a>
+            <a href="#" onclick="showMenu('sweets')">
+              <p class="ubuntu-regular element1" style="margin-top: 0;">
+                <span class="about-us-cta" style="padding-right: 30px;text-transform: uppercase;">Sweets & Drinks</span>
+                <span class="arrow-Animation">→</span>
+              </p>
+            </a>
+          </div>
+
+
+        <!-- Break fast -->
+        <div class="breakfast-menu ubuntu-regular active" id="breakfast-menu">
+            <div class="left-break-menu breakmenu">
+                    <div class="Himalayan-Delights region-menu">
+                        <h1>Himalayan Delights</h1>
+                        <h3>Aloo Paratha</h3>
+                        <p>Whole wheat bread stuffed with spiced mashed potatoes, cooked on a griddle.</p>
+                        <p>₹200</p> <!-- Price for Aloo Paratha -->
+                        
+                        <h3>Chole Bhature</h3>
+                        <p>Deep-fried bread (bhature) served with spicy chickpea curry (chole).</p>
+                        <p>₹250</p> <!-- Price for Chole Bhature -->
+                        
+                        <h3>Paneer Bhurji</h3>
+                        <p>Scrambled cottage cheese cooked with onions, tomatoes, and spices.</p>
+                        <p>₹300</p> <!-- Price for Paneer Bhurji -->
+                        
+                        <h3>Kachori with Aloo Sabzi</h3>
+                        <p>Deep-fried bread stuffed with spiced lentils, served with potato curry.</p>
+                        <p>₹220</p> <!-- Price for Kachori with Aloo Sabzi -->
+                        
+                        <h3>Samosa Chaat</h3>
+                        <p>Crispy samosas topped with yogurt, chutneys, and spices.</p>
+                        <p>₹180</p> <!-- Price for Samosa Chaat -->
+                        
+                        <h3>Chana Masala</h3>
+                        <p>Spicy chickpea curry served with deep-fried bread (bhature) or bread rolls (pav).</p>
+                        <p>₹230</p> <!-- Price for Chana Masala -->
+                        
+                        <h3>Kachori with Sabzi</h3>
+                        <p>Deep-fried bread stuffed with spiced lentils, served with potato curry.</p>
+                        <p>₹210</p> <!-- Price for Kachori with Sabzi -->
+                        
+                        <h3>Vegetable Upma</h3>
+                        <p>Semolina cooked with mixed vegetables, tempered with mustard seeds, curry leaves, and spices.</p>
+                        <p>₹180</p> <!-- Price for Vegetable Upma -->
+                    </div>
+
+                    <div class="Coastal-Flavors region-menu">
+                        <h1>Coastal Flavors</h1>
+                        <h3>Idli Sambar</h3>
+                        <p>Steamed rice cakes served with lentil-based vegetable stew (sambar) and coconut chutney.</p>
+                        <p>₹180</p> <!-- Price for Idli Sambar -->
+                    
+                        <h3>Dosa</h3>
+                        <p>Thin, crispy crepe made from fermented rice and lentil batter, served with sambar and chutney.</p>
+                        <p>₹200</p> <!-- Price for Dosa -->
+                    
+                        <h3>Upma</h3>
+                        <p>Semolina cooked with vegetables, tempered with mustard seeds, curry leaves, and spices.</p>
+                        <p>₹150</p> <!-- Price for Upma -->
+                    
+                        <h3>Pongal</h3>
+                        <p>Rice and lentil dish cooked together and seasoned with cumin, black pepper, and ghee.</p>
+                        <p>₹170</p> <!-- Price for Pongal -->
+                    
+                        <h3>Medu Vada</h3>
+                        <p>Deep-fried savory doughnuts made from urad dal batter, served with sambar and chutney.</p>
+                        <p>₹190</p> <!-- Price for Medu Vada -->
+                    
+                        <h3>Masala Dosa</h3>
+                        <p>Dosa filled with a spicy potato filling, served with sambar and chutney.</p>
+                        <p>₹220</p> <!-- Price for Masala Dosa -->
+                    
+                        <h3>Rava Idli</h3>
+                        <p>Steamed semolina cakes served with sambar and chutney.</p>
+                        <p>₹180</p> <!-- Price for Rava Idli -->
+                    
+                        <h3>Appam with Stew</h3>
+                        <p>Fermented rice pancake served with vegetable stew.</p>
+                        <p>₹250</p> <!-- Price for Appam with Stew -->
+                    
+                        <h3>Adai</h3>
+                        <p>Spicy pancake made from a mixture of lentils and rice, served with avial or chutney.</p>
+                        <p>₹210</p> <!-- Price for Adai -->
+                    
+                        <h3>Uttapam</h3>
+                        <p>Thick pancake made from fermented rice and lentil batter, topped with vegetables.</p>
+                        <p>₹190</p>
+                    </div>
+            </div>
+
+            <div class="right-breakmenu breakmenu">
+                <div class="Desert-Treasures region-menu">
+                    <h1>Desert Treasures</h1>
+                    <h3>Poha</h3>
+                    <p>Flattened rice cooked with onions, mustard seeds, turmeric, and curry leaves.</p>
+                    <p>₹150</p> <!-- Price for Poha -->
+            
+                    <h3>Misal Pav</h3>
+                    <p>Spicy sprouted lentil curry topped with farsan (crunchy snack), served with bread rolls (pav).</p>
+                    <p>₹200</p> <!-- Price for Misal Pav -->
+            
+                    <h3>Sabudana Khichdi</h3>
+                    <p>Tapioca pearls cooked with peanuts, potatoes, and spices, often eaten during fasting.</p>
+                    <p>₹180</p> <!-- Price for Sabudana Khichdi -->
+            
+                    <h3>Kanda Poha</h3>
+                    <p>Flattened rice cooked with onions, mustard seeds, and turmeric, garnished with coriander and grated coconut.</p>
+                    <p>₹160</p> <!-- Price for Kanda Poha -->
+            
+                    <h3>Thepla</h3>
+                    <p>Spiced flatbread made from whole wheat flour, fenugreek leaves, and spices, served with yogurt or pickle.</p>
+                    <p>₹170</p> <!-- Price for Thepla -->
+            
+                    <h3>Batata Poha</h3>
+                    <p>Flattened rice cooked with potatoes, onions, mustard seeds, and turmeric.</p>
+                    <p>₹170</p> <!-- Price for Batata Poha -->
+        
+                    <h3>Khaman Dhokla</h3>
+                    <p>Steamed savory cake made from fermented chickpea flour, garnished with tempered mustard seeds and coriander leaves.</p>
+                    <p>₹180</p> <!-- Price for Khaman Dhokla -->
+            
+                    <h3>Methi Thepla</h3>
+                    <p>Spiced flatbread made from whole wheat flour and fenugreek leaves, served with yogurt or pickle.</p>
+                    <p>₹160</p> <!-- Price for Methi Thepla -->
+            
+                    <h3>Sabudana Vada</h3>
+                    <p>Deep-fried fritters made from soaked and mashed tapioca pearls, served with chutney.</p>
+                    <p>₹200</p> <!-- Price for Sabudana Vada -->
+                </div>
+
+                <div class="Gangetic-Plains region-menu">
+                    <h1>Gangetic Plains</h1>
+                    <h3>Puri Sabzi</h3>
+                   <p>Deep-fried bread served with potato curry and a side of tangy tamarind chutney.</p>
+                  <p>₹200</p> <!-- Price for Puri Sabzi -->
+            
+                    <h3>Luchi Aloo Dum</h3>
+                    <p>Deep-fried puffed bread served with spicy potato curry.</p>
+                    <p>₹220</p> <!-- Price for Luchi Aloo Dum -->
+            
+                    <h3>Chingri Bhaat</h3>
+                    <p>Bengali-style shrimp pulao cooked with fragrant spices and served with raita.</p>
+                    <p>₹300</p> <!-- Price for Chingri Bhaat -->
+            
+                    <h3>Cholar Dal</h3>
+                    <p>Bengali-style chana dal cooked with coconut, ginger, and whole spices.</p>
+                    <p>₹180</p> <!-- Price for Cholar Dal -->
+            
+                    <h3>Dhokla</h3>
+                    <p>Steamed fermented rice and chickpea flour cake, tempered with mustard seeds, curry leaves, and green chilies.</p>
+                    <p>₹170</p> <!-- Price for Dhokla -->
+            
+                    <h3>Bengali Luchi</h3>
+                    <p>Deep-fried puffed bread served with alur dom (spicy potato curry).</p>
+                    <p>₹210</p> <!-- Price for Bengali Luchi -->
+            
+                    <h3>Misti Doi</h3>
+                    <p>Sweetened yogurt dessert, often flavored with cardamom or saffron.</p>
+                    <p>₹150</p> <!-- Price for Misti Doi -->
+            
+                    <h3>Chana Ghugni</h3>
+                    <p>Spicy dried yellow peas curry, often served with hot puris.</p>
+                    <p>₹190</p> <!-- Price for Chana Ghugni -->
+            
+                    <h3>Aloo Paratha</h3>
+                    <p> Whole wheat bread stuffed with spiced mashed potatoes, cooked on a griddle, served with yogurt or pickle.</p>
+                    <p>₹250</p> <!-- Price for Aloo Paratha -->
+            
+                   <h3>Bengali Bhapa Pitha</h3>
+                   <p>Steamed rice cakes flavored with coconut and jaggery, served as a sweet breakfast dish.</p>
+                   <p>₹180</p> <!-- Price for Bengali Bhapa Pitha -->
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Lunch & Dinner -->
+
+        <div class="breakfast-menu ubuntu-regular active" id="lunch-menu">
+            <div class="left-break-menu breakmenu">
+                    <div class="appetizer-menu region-menu">
+                        <h1>Appetizers</h1>
+                        <h2>Vegetarian</h2>
+
+                        <h3>Paneer Tikka</h3>
+                        <p>Marinated cottage cheese cubes grilled to perfection, inspired by the flavors of Punjab.</p>
+                        <p>₹180</p>
+                    
+                        <h3>Aloo Tikki</h3>
+                        <p>Spiced potato patties served with chutneys and yogurt, a classic street food from Delhi.</p>
+                        <p>₹150</p>
+
+                        <h3>Papdi Chaat</h3>
+                        <p>Crispy flour crackers topped with boiled potatoes, chickpeas, yogurt, chutneys, and spices, a popular street food snack from Delhi.</p>
+                        <p>₹170</p>
+
+                        <h3>Hara Bhara Kabab</h3>
+                        <p>Spinach and green peas patties seasoned with Indian spices, shallow-fried until golden brown, a flavorful vegetarian appetizer.</p>
+                        <p>₹190</p>
+
+                        <h3>Dahi Vada</h3>
+                        <p>Lentil dumplings soaked in seasoned yogurt and topped with tangy tamarind chutney and spicy green chutney, a refreshing and indulgent snack.</p>
+                        <p>₹180</p>
+
+                        <h3>Masala Vada</h3>
+                        <p>Deep-fried lentil fritters flavored with spices like ginger, curry leaves, and green chilies, a popular South Indian snack.</p>
+                        <p>₹160</p>
+
+                        <h3>Medu Vada</h3>
+                        <p>Crispy, deep-fried lentil doughnuts served with sambar and coconut chutney, a traditional South Indian delicacy.</p>
+                        <p>₹170</p>
+
+                        <h2>Non-Vegetarian</h2>
+
+                        <h3>Chicken Tikka</h3>
+                        <p>Tender chicken pieces marinated in yogurt and spices, grilled to perfection in a tandoor, a classic appetizer from Punjab.</p>
+                        <p>₹220</p>
+
+                        <h3>Amritsari Fish Fry</h3>
+                        <p>Marinated fish fillets coated in a spiced gram flour batter and deep-fried until crispy, a famous street food from Amritsar, Punjab.</p>
+                        <p>₹250</p>
+
+                        <h3>Kerala Fried Chicken</h3>
+                        <p>Chicken pieces marinated in a blend of South Indian spices and deep-fried until golden brown, a flavorful appetizer from Kerala.</p>
+                        <p>₹230</p>
+
+                        <h3>Goan Shrimp Cocktail</h3>
+                        <p>Fresh shrimp marinated in a tangy and spicy mixture of Goan spices, served cold as a refreshing appetizer from Goa.</p>
+                        <p>₹280</p>
+
+                        <h3>Hyderabadi Chicken 65</h3>
+                        <p>Deep-fried spicy chicken chunks tossed in a flavorful mix of curry leaves, mustard seeds, and red chili, a popular appetizer from Hyderabad.</p>
+                        <p>₹210</p>
+
+                        <h3>Chettinad Pepper Chicken</h3>
+                        <p>Chicken pieces cooked with freshly ground black pepper, ginger, garlic, and other aromatic spices, a spicy and flavorful appetizer from the Chettinad region of Tamil Nadu.</p>
+                        <p>₹240</p>
+
+                        <h3>Assamese Duck Roast</h3>
+                        <p>Tender duck pieces marinated in Assamese spices and roasted until succulent and flavorful, a traditional appetizer from Assam.</p>
+                        <p>₹290</p>
+
+                        <h3>Maharashtrian Kheema Pav</h3>
+                        <p>Spicy minced meat cooked with onions, tomatoes, and spices, served with buttered pav (bread), a popular appetizer from Maharashtra.</p>
+                        <p>₹220</p>
+
+
+                    </div>
+
+                    <div class="Main-Courses region-menu">
+                        <h1>Main Courses</h1>
+                        
+                        <h2>Vegetarian</h2>
+
+                        <h3>Sarson da Saag with Makki di Roti</h3>
+                        <p>Traditional Punjabi dish made from mustard greens (sarson) and served with unleavened cornbread (makki di roti), a classic from Punjab.</p>
+                        <p>₹220</p>
+                        
+                        <h3>Paneer Butter Masala</h3>
+                        <p>Soft paneer cubes cooked in a rich and creamy tomato-based gravy, a North Indian delicacy.</p>
+                        <p>₹240</p>
+                        
+                        <h3>Bisi Bele Bath</h3>
+                        <p>A spicy and flavorful rice dish cooked with lentils, mixed vegetables, and aromatic spices, a traditional dish from Karnataka.</p>
+                        <p>₹210</p>
+                        
+                        <h3>Undhiyu</h3>
+                        <p>A mixed vegetable curry made with seasonal vegetables, chickpea flour dumplings (muthia), and a blend of spices, a winter specialty from Gujarat.</p>
+                        <p>₹230</p>
+                        
+                        <h3>Pongal</h3>
+                        <p>Traditional South Indian dish made from rice and lentils, cooked together and seasoned with cumin, black pepper, and ghee, a comfort food from Tamil Nadu.</p>
+                        <p>₹200</p>
+                        
+                        <h3>Baingan Bharta</h3>
+                        <p>Smoky roasted eggplant mashed and cooked with onions, tomatoes, and spices, garnished with fresh coriander leaves, a delicious side dish from Punjab.</p>
+                        <p>₹200</p>
+                        
+                        <h3>Dhokar Dalna</h3>
+                        <p>Bengali dish made from lentil cakes (dhoka) cooked in a spicy gravy, a flavorful vegetarian option from West Bengal.</p>
+                        <p>₹220</p>
+                        
+                        <h3>Avial</h3>
+                        <p>A traditional Kerala dish made from mixed vegetables, coconut, yogurt, and curry leaves, cooked together to create a creamy and flavorful curry.</p>
+                        <p>₹210</p>
+                        
+                        <h3>Dal Baati Churma</h3>
+                        <p>A traditional Rajasthani dish consisting of lentil curry (Dal) cooked with aromatic spices, served alongside crispy wheat dough balls (Baati), and accompanied by a sweet and savory mixture of coarsely ground wheat, ghee, and jaggery (Churma), offering a delightful blend of flavors and textures in every bite.</p>
+                        <p>₹260</p>
+                        
+                        <h2>Non-Vegetarian</h2>
+                        
+                        <h3>Hyderabadi Biryani</h3>
+                        <p>Fragrant basmati rice cooked with marinated meat (usually chicken or mutton), flavored with aromatic spices and herbs, and garnished with fried onions and boiled eggs, originating from Hyderabad, Telangana.</p>
+                        <p>₹550 (Chicken), ₹650 (Mutton)</p>
+                        
+                        <h3>Goan Fish Curry</h3>
+                        <p>A spicy and tangy curry made with fresh fish, coconut milk, and Goan spices like kokum, tamarind, and red chilies, representing the coastal cuisine of Goa.</p>
+                        <p>₹600</p>
+                        
+                        <h3>Bengali Fish Curry (Maachher Jhol)</h3>
+                        <p>A light and flavorful fish curry cooked with mustard oil, spices, and vegetables like potatoes and tomatoes, typical of Bengali cuisine from West Bengal.</p>
+                        <p>₹580</p>
+                        
+                        <h3>Kerala Chicken Curry</h3>
+                        <p>A rich and creamy curry made with tender chicken pieces simmered in a coconut milk-based sauce flavored with Kerala spices like curry leaves, mustard seeds, and black pepper, hailing from the southern state of Kerala.</p>
+                        <p>₹620</p>
+                        
+                        <h3>Lucknowi Chicken Korma</h3>
+                        <p>A fragrant and indulgent chicken curry cooked in a creamy sauce made from yogurt, cashews, and aromatic spices like cardamom, cloves, and saffron, representing the royal cuisine of Lucknow, Uttar Pradesh.</p>
+                        <p>₹640</p>
+                        
+                        <h3>Punjabi Butter Chicken (Murgh Makhani)</h3>
+                        <p>Succulent pieces of chicken cooked in a rich and velvety tomato-based gravy, enriched with butter, cream, and traditional Punjabi spices, a beloved dish from Punjab.</p>
+                        <p>₹600</p>
+                        
+                        <h3>Assamese Duck Curry (Haahor Mangxo)</h3>
+                        <p>A flavorful and aromatic duck curry made with tender pieces of duck cooked in a tangy gravy flavored with Assamese spices like black mustard seeds, ginger, and garlic, typical of Assamese cuisine from Assam.</p>
+                        <p>₹700</p>
+                        
+                        <h3>Chettinad Chicken</h3>
+                        <p>A fiery and flavorful chicken curry from the Chettinad region of Tamil Nadu, made with a unique blend of spices including black pepper, fennel, cloves, and star anise, creating a bold and robust flavor profile.</p>
+                        <p>₹630</p>
+                        
+                    </div>
+            </div>
+
+            <div class="right-breakmenu breakmenu">
+                <div class="accompaniments region-menu">
+                    <h1>Accompaniments</h1>
+                    
+                    <h2>Vegetarian</h2>
+
+                    <h3>Punjabi Dal Tadka</h3>
+                    <p>A flavorful lentil preparation tempered with spices like cumin, mustard seeds, garlic, and dried red chilies, originating from Punjab.</p>
+                    <p>₹220</p>
+                    
+                    <h3>Maharashtrian Bharli Vangi (Stuffed Eggplant)</h3>
+                    <p>Baby eggplants stuffed with a spicy peanut and coconut filling, cooked until tender, representing the cuisine of Maharashtra.</p>
+                    <p>₹240</p>
+                    
+                    <h3>Rajasthani Gatte ki Sabzi</h3>
+                    <p>Gram flour (besan) dumplings simmered in a yogurt-based gravy flavored with traditional Rajasthani spices like ajwain, turmeric, and coriander, a specialty from Rajasthan.</p>
+                    <p>₹230</p>
+                    
+                    <h3>Uttar Pradesh Ki Dal Kachori</h3>
+                    <p>Crispy and flaky deep-fried pastry filled with a spiced lentil filling, served with tangy tamarind chutney, popular across Uttar Pradesh.</p>
+                    <p>₹200</p>
+                    
+                    <h3>Karnataka Bisi Bele Bath</h3>
+                    <p>A flavorful one-pot rice dish cooked with lentils, vegetables, tamarind, and spices like cinnamon, cloves, and nutmeg, a staple in Karnataka cuisine.</p>
+                    <p>₹250</p>
+                    
+                    <h3>Bengali Aloo Posto</h3>
+                    <p>Potatoes cooked in a creamy poppy seed paste flavored with green chilies and nigella seeds, a traditional dish from West Bengal.</p>
+                    <p>₹210</p>
+                    
+                    <h3>Gujarati Undhiyu</h3>
+                    <p>A mixed vegetable curry made with seasonal vegetables, coconut, and spices, traditionally cooked underground in Gujarat during the winter season.</p>
+                    <p>₹260</p>
+                    
+                    <h3>Tamil Nadu Coconut Chutney</h3>
+                    <p>A classic South Indian condiment made from fresh coconut, green chilies, and spices, ground to a smooth paste and tempered with mustard seeds, curry leaves, and dried red chilies.</p>
+                    <p>₹180</p>
+                    
+                    <h2>Non-Vegetarian</h2>
+                    
+                    <h3>Hyderabadi Bagara Baingan</h3>
+                    <p>Baby eggplants cooked in a tangy and spicy peanut-based gravy, a specialty from Hyderabad, Telangana.</p>
+                    <p>₹280</p>
+                    
+                    <h3>Goan Prawn Balchão</h3>
+                    <p>Prawns marinated in a spicy and tangy masala made from chili peppers, vinegar, and spices, a popular dish from Goa.</p>
+                    <p>₹320</p>
+                    
+                    <h3>Kerala Fish Molly</h3>
+                    <p>Fish cooked in a creamy coconut milk-based sauce flavored with green chilies, ginger, and curry leaves, a delicacy from Kerala's Malabar region.</p>
+                    <p>₹310</p>
+                    
+                    <h3>Bengali Kosha Mangsho</h3>
+                    <p>Slow-cooked tender mutton chunks in a rich and spicy gravy made from onions, tomatoes, ginger, garlic, and a blend of aromatic spices, a traditional dish from West Bengal.</p>
+                    <p>₹350</p>
+                    
+                    <h3>Parsi Sali Boti</h3>
+                    <p>Tender mutton pieces cooked with julienned potatoes in a tangy and spicy tomato-based gravy, representing the Parsi community's cuisine in Mumbai, Maharashtra.</p>
+                    <p>₹330</p>
+                    
+                    <h3>Rajasthani Laal Maas</h3>
+                    <p>Spicy mutton curry cooked with red chili paste, yogurt, and a blend of traditional Rajasthani spices, known for its fiery flavor, originating from Rajasthan.</p>
+                    <p>₹340</p>
+                    
+                    <h3>Andhra Royyala Iguru</h3>
+                    <p>Succulent shrimp cooked in a tangy and spicy tomato-based gravy with traditional Andhra spices, offering a burst of flavors, from the coastal regions of Andhra Pradesh.</p>
+                    <p>₹320</p>
+                    
+                    <h3>Naga Pork with Bamboo Shoots</h3>
+                    <p>Pork cooked with fermented bamboo shoots and fiery Naga chili peppers, delivering a unique and robust flavor profile, a traditional dish from Nagaland.</p>
+                    <p>₹340</p>
+                
+                </div>
+
+                <div class="Breads&Rice region-menu">
+
+                    <h1>Indain Breads & Rice Varieties</h1>
+                    
+                    <h2>Breads</h2>
+
+                    <h3>Naan</h3>
+                    <p>Soft and fluffy leavened bread baked in a tandoor (clay oven), perfect for soaking up gravies and sauces.</p>
+                    <p>₹70</p>
+                    
+                    <h3>Roti/Chapati</h3>
+                    <p>Unleavened flatbread made from whole wheat flour, cooked on a griddle, and commonly served with curries and vegetables across India.</p>
+                    <p>₹50</p>
+                    
+                    <h3>Paratha</h3>
+                    <p>Flaky and layered flatbread made from whole wheat flour, often stuffed with various fillings like spiced potatoes, paneer, or cauliflower, and pan-fried in ghee.</p>
+                    <p>₹80</p>
+                    
+                    <h3>Puri</h3>
+                    <p>Deep-fried puffed bread made from unleavened wheat flour dough, crispy on the outside and soft on the inside, a popular accompaniment to Indian breakfast and festive meals.</p>
+                    <p>₹60</p>
+                    
+                    
+                    <h3>Tandoori Roti</h3>
+                    <p>Round, flatbread made from whole wheat flour dough, baked in a tandoor (clay oven), imparting a smoky flavor and a slightly crispy texture.</p>
+                    <p>₹60</p>
+                    
+                    <h3>Missi Roti</h3>
+                    <p>A Punjabi specialty made from a mixture of whole wheat flour (atta) and gram flour (besan), flavored with spices like ajwain (carom seeds), and typically enjoyed with curries.</p>
+                    <p>₹70</p>
+                    
+                    <h3>Rumali Roti</h3>
+                    <p>Thin, soft, and paper-thin flatbread, resembling a handkerchief, made from refined flour dough and cooked on a hot griddle, commonly served with kebabs and curries.</p>
+                    <p>₹80</p>
+                    
+                    <h3>Kulcha</h3>
+                    <p>Soft and fluffy leavened bread, similar to naan, but often stuffed with a filling like spiced potatoes (aloo kulcha) or paneer (paneer kulcha), popular in North India.</p>
+                    <p>₹90</p>
+                    
+                    
+                    <h2>Rice Items</h2>
+                    
+                    <h3>Bisi Bele Bath</h3>
+                    <p>A flavorful rice dish from Karnataka made with rice, pigeon peas (toor dal), assorted vegetables, and a special spice blend known as "bisi bele bath powder".</p>
+                    <p>₹200</p>
+                    
+                    
+                    <h3>Chitranna</h3>
+                    <p>A South Indian rice dish flavored with lemon juice, mustard seeds, green chilies, curry leaves, and turmeric, offering a refreshing and tangy taste.</p>
+                    <p>₹170</p>
+                    
+                    <h3>Khichdi</h3>
+                    <p>A comfort food enjoyed across India, khichdi is a one-pot dish made with rice, lentils, and spices, often served with yogurt, pickles, or papad.</p>
+                    <p>₹190</p>
+                    
+                    <h3>Pulao</h3>
+                    <p>Fragrant basmati rice cooked with vegetables, whole spices, and herbs like mint and coriander, offering a subtle yet flavorful taste.</p>
+                    <p>₹220</p>
+                    
+                    <h3>Tamarind Rice</h3>
+                    <p>Tangy and spicy rice dish made with tamarind paste, peanuts, curry leaves, and a special blend of spices, a South Indian favorite for festivals and special occasions.</p>
+                    <p>₹210</p>
+                    
+                    <h3>Tomato Rice</h3>
+                    <p>A simple yet delicious rice dish made with tomatoes, onions, and spices like mustard seeds, turmeric, and red chili powder, offering a tangy and savory flavor.</p>
+                    <p>₹190</p>
+                    
+                    <h3>Coconut Rice</h3>
+                    <p>Fragrant rice dish cooked with freshly grated coconut, mustard seeds, curry leaves, and spices, offering a delicate and aromatic flavor.</p>
+                    <p>₹200</p>
+                    
+                    <h3>Jeera Rice</h3>
+                    <p>Fragrant basmati rice cooked with cumin seeds and ghee, offering a subtle yet aromatic taste, perfect as an accompaniment to various curries and gravies.</p>
+                    <p>₹180</p>
+                    
+                </div>
+            </div>
+        </div>
+
+            
+            
+        </div>
+
+        <!-- Sweets & Drinks -->
+
+        <div class="breakfast-menu ubuntu-regular" id="sweets-menu" style="margin-left: 15vw;">
+            <div class="left-break-menu breakmenu">
+                <div class="region-menu">
+
+                <h1>Indian Sweets</h2>
+
+                <h3>Rasgulla</h3>
+                <p>Soft and spongy cottage cheese (chhena) balls cooked in sugar syrup, a classic Bengali sweet from West Bengal.</p>
+                <p>₹80</p>
+                
+                <h3>Jalebi</h3>
+                <p>Deep-fried batter spirals soaked in sugar syrup, crispy on the outside and syrupy sweet on the inside, a popular dessert across North India.</p>
+                <p>₹60</p>
+                
+                <h3>Mysore Pak</h3>
+                <p>A rich and decadent fudge-like sweet made from chickpea flour, ghee, and sugar, originating from Mysore, Karnataka.</p>
+                <p>₹100</p>
+                
+                <h3>Rosogolla</h3>
+                <p>Similar to Rasgulla, these soft cottage cheese balls are cooked in sugar syrup, a beloved sweet from Odisha.</p>
+                <p>₹90</p>
+                
+                <h3>Gulab Jamun</h3>
+                <p>Deep-fried milk solids dumplings soaked in sugar syrup, flavored with rose water and cardamom, a classic Indian dessert popular in North India.</p>
+                <p>₹70</p>
+                
+                <h3>Peda</h3>
+                <p>A sweet made from condensed milk and sugar, flavored with cardamom and garnished with nuts, popular in Uttar Pradesh.</p>
+                <p>₹80</p>
+                
+                <h3>Ladoo</h3>
+                <p>A spherical sweet made from various ingredients like gram flour (besan), semolina (rava), or coconut, mixed with sugar and ghee, a festive favorite in South India.</p>
+                <p>₹50</p>
+                
+                <h3>Sandesh</h3>
+                <p>A delicacy made from chhena (cottage cheese), sugar, and flavored with saffron, cardamom, or rose water, popular in West Bengal.</p>
+                <p>₹90</p>
+                
+                <h3>Modak</h3>
+                <p>Steamed or fried dumplings made from rice flour or wheat flour, filled with a sweet mixture of coconut, jaggery, and nuts, offered to Lord Ganesha during festivals like Ganesh Chaturthi in Maharashtra.</p>
+                <p>₹110</p>
+                
+                <h3>Halwa</h3>
+                <p>A dense, sweet confection made from various ingredients like semolina (sooji), wheat flour (atta), or carrots, cooked with ghee, sugar, and flavored with cardamom, often garnished with nuts and served warm across India.</p>
+                <p>₹60</p>
+                
+                <h3>Kaju Katli</h3>
+                <p>A traditional Indian sweet made from cashew nuts, sugar, and ghee, shaped into diamond-shaped pieces, a popular festive treat across India.</p>
+                <p>₹120</p>
+                
+                <h3>Barfi</h3>
+                <p>A dense, fudge-like sweet made from condensed milk, sugar, and various flavors like cardamom, saffron, or nuts, cut into square or diamond shapes, enjoyed across India.</p>
+                <p>₹80</p>
+                
+                <h3>Pootharekulu</h3>
+                <p>A traditional Andhra sweet made from rice flour and jaggery, rolled into thin layers and garnished with ghee, a delicacy from Andhra Pradesh.</p>
+                <p>₹100</p>
+                
+                <h3>Rasmalai</h3>
+                <p>Soft, spongy cottage cheese (chhena) patties soaked in sweetened, thickened milk, flavored with cardamom, saffron, and garnished with chopped nuts, a popular dessert in North India.</p>
+                <p>₹90</p>
+                
+                <h3>Ghevar</h3>
+                <p>A traditional Rajasthani sweet made from flour, ghee, and sugar syrup, often garnished with nuts and served during festivals like Teej and Raksha Bandhan in Rajasthan.</p>
+                <p>₹110</p>
+                
+                <h3>Adhirasam</h3>
+                <p>A sweet delicacy made from rice flour and jaggery, flavored with cardamom, deep-fried until crispy on the outside and soft on the inside, a traditional Tamil Nadu sweet.</p>
+                <p>₹80</p>
+                
+                <h3>Kalakand</h3>
+                <p>A rich and creamy sweet made from solidified milk (khoya), sugar, and flavored with cardamom, often garnished with chopped nuts, popular across North India and Uttar Pradesh.</p>
+                <p>₹100</p>
+                
+                <h3>Balushahi</h3>
+                <p>A traditional North Indian sweet made from flour, ghee, and yogurt, deep-fried until golden brown and soaked in sugar syrup, crispy on the outside and soft on the inside.</p>
+                <p>₹80</p>
+                
+                <h3>Boondi Ladoo</h3>
+                <p>Small, round sweet balls made from chickpea flour (besan), fried and soaked in sugar syrup, often garnished with chopped nuts, a popular sweet across India.</p>
+                <p>₹70</p>
+                
+                <h3>Puran Poli</h3>
+                <p>A sweet flatbread made from whole wheat flour dough stuffed with a mixture of cooked lentils (usually chana dal), jaggery, and spices, typically prepared during festivals like Holi and Diwali in Maharashtra, Gujarat, and Karnataka.</p>
+                <p>₹100</p>
+                
+                <h3>Kaju Roll</h3>
+                <p>A sweet delicacy made from cashew nut paste and sugar, rolled into cylindrical shapes, a popular choice for gifting during festivals and special occasions.</p>
+                <p>₹120</p>
+                
+                <h3>Cham Cham</h3>
+                <p>Oval-shaped sweet dumplings made from paneer (cottage cheese), cooked in sugar syrup, often stuffed or garnished with grated coconut or chopped nuts, a traditional Bengali sweet.</p>
+                <p>₹90</p>
+                
+                <h3>Khaja</h3>
+                <p>A crispy, layered sweet made from refined wheat flour, ghee, and sugar, often flavored with cardamom and garnished with nuts, popular in Odisha, Bihar, and Andhra Pradesh.</p>
+                <p>₹100</p>
+                
+                <h3>Thaen Mittai</h3>
+                <p>A traditional South Indian sweet made from rice flour and jaggery, shaped into cylindrical sticks, often flavored with cardamom or sesame seeds, a favorite among children and adults alike.</p>
+                <p>₹60</p>
+                
+                
+                <h3>Rava Ladoo</h3>
+                <p>Round sweet balls made from semolina (rava), sugar, and ghee, flavored with cardamom and garnished with chopped nuts, a simple yet delicious sweet enjoyed across India.</p>
+                <p>₹70</p>
+                
+                <h3>Dharwad Peda</h3>
+                <p>A sweet delicacy from Dharwad, Karnataka, made from khoya (reduced milk), sugar, and flavored with cardamom, often garnished with pistachios or almonds, known for its unique texture and taste.</p>
+                <p>₹120</p>
+                
+                <h3>Kesari</h3>
+                <p>A South Indian sweet made from semolina (sooji), ghee, sugar, and flavored with saffron and cardamom, often garnished with nuts, served as a dessert or during festivals like Diwali and Navratri.</p>
+                <p>₹80</p>
+                
+                
+                <h3>Dodha Barfi</h3>
+                <p>A dense and rich sweet made from khoya (reduced milk), sugar, and flavored with cardamom and nuts, often garnished with edible silver foil, a popular sweet from Punjab.</p>
+                <p>₹110</p>
+                
+                <h3>Gavvalu</h3>
+                <p>Deep-fried sweet shells made from maida (all-purpose flour) dough, shaped like shells or small conches, coated with sugar syrup, a traditional sweet from Andhra Pradesh and Telangana.</p>
+                <p>₹90</p>
+                
+                </div>
+                
+            </div>
+
+            <div class="right-breakmenu breakmenu">
+
+                <div class="region-menu">
+                <h1>Drinks</h1>
+
+                <h3>Lassi</h3>
+                <p>A traditional Indian yogurt-based drink, sweet or salty, blended with water, sugar, and flavored with spices like cardamom or fruits like mango, offering a refreshing and cooling effect, popular across India.</p>
+                <p>₹150</p>
+                
+                <h3>Chai (Masala Tea)</h3>
+                <p>A spiced tea made from black tea leaves, milk, sugar, and a blend of aromatic spices like cardamom, cinnamon, cloves, and ginger, boiled together to create a flavorful and invigorating beverage, a staple in Indian households.</p>
+                <p>₹120</p>
+                
+                <h3>Buttermilk (Chaas)</h3>
+                <p>A refreshing yogurt-based drink mixed with water and flavored with spices like roasted cumin powder, salt, and mint leaves, served cold as a digestive and cooling drink, popular during summers.</p>
+                <p>₹100</p>
+                
+                <h3>Jal-jeera</h3>
+                <p>A tangy and spicy drink made from cumin seeds, tamarind, mint, and black salt, mixed with water and served chilled, known for its digestive properties and refreshing taste, popular as a street drink across India.</p>
+                <p>₹130</p>
+                
+                <h3>Solkadhi</h3>
+                <p>A traditional drink from Maharashtra and Goa made from coconut milk, kokum (mangosteen) extract, and spices like garlic and ginger, served cold as a digestive and refreshing beverage, often accompanied by rice-based meals.</p>
+                <p>₹160</p>
+                
+                <h3>Thandai</h3>
+                <p>A festive drink made from a mixture of milk, nuts (like almonds and pistachios), sugar, and flavored with spices like saffron, cardamom, and rose petals, served chilled, especially during festivals like Holi.</p>
+                <p>₹180</p>
+                
+                <h3>Aam Panna</h3>
+                <p>A refreshing summer drink made from raw mangoes, sugar, and flavored with roasted cumin powder, black salt, and mint leaves, known for its cooling properties and tangy taste, popular in North India.</p>
+                <p>₹140</p>
+                
+                <h3>Bel Sharbat</h3>
+                <p>A sweet and tangy drink made from bel (wood apple) pulp, sugar, and water, served chilled, known for its cooling effect and digestive properties, often consumed during summers.</p>
+                <p>₹150</p>
+                
+                <h3>Coconut Water</h3>
+                <p>Natural coconut water extracted from tender coconuts, served fresh and chilled, known for its hydrating and refreshing properties, popular as a street drink across India.</p>
+                <p>₹120</p>
+                
+                <h3>Neer Mor</h3>
+                <p>A South Indian drink made from buttermilk flavored with ginger, green chilies, curry leaves, and tempered with mustard seeds, asafoetida, and curry leaves, served cold as a digestive and cooling beverage.</p>
+                <p>₹130</p>
+                
+                <h3>Bael Sharbat</h3>
+                <p>A sweet and tangy drink made from bael (wood apple) pulp, sugar, and water, known for its medicinal properties and cooling effect on the body, popular during summers.</p>
+                <p>₹160</p>
+                
+                <h3>Chaang</h3>
+                <p>A traditional fermented millet-based alcoholic beverage popular in the Himalayan regions of India, made from finger millet or barley, served cold and consumed during festive occasions.</p>
+                <p>₹200</p>
+                
+                <h3>Kokum Sherbet</h3>
+                <p>A refreshing drink made from kokum (mangosteen) extract, sugar, and water, flavored with roasted cumin powder and black salt, known for its cooling properties and tangy taste, popular in Maharashtra and Goa.</p>
+                <p>₹170</p>
+                
+                <h3>Kanji</h3>
+                <p>A traditional North Indian fermented drink made from black carrots, water, mustard seeds, and flavored with spices like red chili powder and asafoetida, served cold as a digestive and refreshing beverage.</p>
+                <p>₹140</p>
+                
+                <h3>Badam Milk</h3>
+                <p>A rich and creamy drink made from milk, almond paste, sugar, and flavored with saffron and cardamom, served warm or chilled, known for its nourishing properties and delicious taste.</p>
+                <p>₹180</p>
+                
+                <h3>Falooda</h3>
+                <p>A popular dessert drink made from milk, rose syrup, vermicelli, basil seeds (sabja), and ice cream, garnished with chopped nuts and tutti frutti, offering a delightful blend of flavors and textures.</p>
+                <p>₹200</p>
+                
+                <h3>Paan Shot</h3>
+                <p>A unique and refreshing drink made from betel leaves (paan), gulkand (rose petal jam), and sweet syrup, served in small glasses, offering a burst of flavors and a digestive after-meal treat.</p>
+                <p>₹190</p>
+                
+                <h3>Bhang Thandai</h3>
+                <p>A traditional drink consumed during Holi festival, made from milk, nuts, spices, and cannabis paste (bhang), offering a festive and euphoric experience, popular in North India.</p>
+                <p>₹220</p>
+                
+                <h3>Sattu Drink</h3>
+                <p>A nutritious and refreshing drink made from roasted chickpea flour (sattu), water, lemon juice, and spices like black salt and roasted cumin powder, known for its cooling properties and energy-boosting benefits, popular in Bihar and Uttar Pradesh.</p>
+                <p>₹150</p>
+                
+                <h3>Ragi Malt</h3>
+                <p>A healthy and filling drink made from ragi (finger millet) flour, milk, water, and sweetened with jaggery, flavored with cardamom and garnished with chopped nuts, offering a nutritious and energy-rich beverage, popular in South India.</p>
+                <p>₹160</p>
+                
+                <h3>Sugarcane Juice</h3>
+                <p>Freshly extracted juice from sugarcane, served cold and often mixed with lemon juice and a dash of ginger, known for its natural sweetness and refreshing taste, popular as a street drink across India.</p>
+                <p>₹130</p>
+                
+                <h3>Barley Water</h3>
+                <p>A nutritious drink made from barley grains boiled in water, strained, and flavored with lemon juice and honey, known for its cooling and detoxifying properties, popular as a health drink in India.</p>
+                <p>₹140</p>
+                
+                <h3>Kesar Badam Shake</h3>
+                <p>A rich and creamy shake made from milk, soaked almonds, saffron (kesar), and sugar, blended together to create a smooth and indulgent beverage, garnished with chopped nuts and saffron strands, offering a luxurious treat for the taste buds.</p>
+                <p>₹190</p>
+                
+                <h3>Rose Milk</h3>
+                <p>A fragrant and refreshing drink made from milk, rose syrup, and sugar, flavored with a hint of rose water, served chilled, known for its floral aroma and soothing taste, popular across India.</p>
+                <p>₹170</p>
+                
+                <h3>Sharbat-e-Sandal</h3>
+                <p>A cooling drink made from sandalwood syrup, sugar, and water, flavored with rose water and garnished with chopped nuts, offering a unique and refreshing taste, popular in North India during summers.</p>
+                <p>₹180</p>
+                
+                <h3>Panakam</h3>
+                <p>A traditional South Indian drink made from jaggery (cane sugar), water, dried ginger, cardamom, and pepper, served cold as a refreshing and energizing beverage, especially during festive occasions like Ram Navami.</p>
+                <p>₹160</p>
+                
+                <h3>Kashaya</h3>
+                <p>An Ayurvedic herbal drink made from a blend of spices like cinnamon, cardamom, ginger, and pepper, boiled with water and sweetened with honey, known for its medicinal properties and immune-boosting benefits.</p>
+                <p>₹160</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <footer class="site-footer">
+        <div class="site-footer-primary">
+            <div class="container">
+                <ul class="social-links" style="margin-left: 30px;">
+                    <li><a href="https://www.facebook.com/YourFacebookPage" target="_blank" rel="noopener"><span class="sr-only"><img src="https://www.svgrepo.com/show/299425/facebook.svg" alt=""></span></a></li>
+                    <li><a href="https://www.instagram.com/YourInstagramPage/" target="_blank" rel="noopener"><span class="sr-only"><img src="https://www.svgrepo.com/show/303154/instagram-2016-logo.svg" alt=""></span></a></li>
+                    <li><a href="https://twitter.com/YourTwitterPage" target="_blank" rel="noopener"><span class="sr-only"><img src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-1024.png" alt=""></span></a></li>
+                </ul>
+                <nav class="site-nav" style="margin-right: 28px;">
+                    <ul class="footer-nav-menu" id="Footer-Menu">
+                        <li><a href="./contact-us.html" class="ubuntu-regular contact-us">Contact Us</a></li>
+                        <li><a href="./special-events.html" class="ubuntu-regular special-events">Special Events</a></li>
+                        <li><a href="./news.html" class="ubuntu-regular news-and-updates">News & Updates</a></li>
+                        <li><a href="./signup.html" class="ubuntu-regular Email-Class-Footer">Email Signup</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <div class="site-footer-secondary">Copyright © Tiffin Box</div>
+
+
+    <script src="./homeIndex.js"></script>
+    <script src="./menu.js"></script>
+    
+</body>
+</html>

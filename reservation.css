@@ -1,0 +1,116 @@
+.main-reservation-container {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-reservation-container h2{
+    padding: 4vh 14vw;
+    background-color: #e0bfa8;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    margin-bottom: 5vh;
+}
+
+.main-reservation-container p{
+    font-size: 1.5rem;
+}
+
+.main-reservation-container select,
+.main-reservation-container input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+.main-reservation-container button {
+    background-color: #e0bfa8;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.make-a-reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+  }
+  .make-a-reservation h3{
+    margin-bottom: 1vh;
+    font-size: 0.9rem;
+  }
+  .make-a-reservation{
+    background-color: #e0bfa8;
+    padding: 5vh 2vw;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    padding-top:2.5vh  ;
+  }
+
+.make-a-reservation select,.make-a-reservation button{
+    text-align: center;
+    padding: 1vw;
+    appearance: none;
+    width: 19vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.reservation-success {
+    text-align: center;
+    background-color: #dcdcdc;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+  }
+  
+  .reservation-success-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+  }
+  
+  .reservation-success-title {
+    font-weight: bold;
+    margin-bottom: 10px; 
+    font-size: 2rem;
+  }
+  
+  .reservation-detail-label {
+    font-weight: bold;
+    margin-right: 5px; /* Space after label */
+  }
+  
+  .reservation-success-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2; /* Adjust opacity for subtle background effect */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .reservation-details {
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+  }
+  
+  .reservation-details p {
+    margin: 5px 0; /* Add some vertical space between items */
+  }
+  

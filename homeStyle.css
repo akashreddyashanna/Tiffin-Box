@@ -1,0 +1,441 @@
+/* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-position: center;
+    background-color: #f5f5f5;
+}
+
+/* Navigation Styles */
+
+.NavBar-Items img {
+    height: 90px;
+    width: 300px;
+    margin-right: 100px;
+}
+.NavBar-Items-secondary-color{
+    background-color:  #e0bfa8;
+    padding: 10px;
+}
+nav {
+    background-color:#dcedc8; /* Rose Gold */
+     color: #333; /* Dark Gray */ 
+    display: flex;
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center;
+    padding: 8px; /* Add padding to nav if needed */
+    text-transform: uppercase;
+}
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+nav ul li {
+    margin-left: 45px; /* Adjust spacing between list items */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove margin from the first item */
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.Nav-Item-Order_Online{
+    border: 3px solid white;
+    padding: 20px;
+    margin: 40px;
+}
+
+#navBar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+/* NAV ANIMATIONS */
+.Nav-Item-Order_Online {
+    padding: 20px;
+    border: 2px solid white;
+    font-size: 1.2rem;
+    transition: border-width 0.3s; /* Add transition for border width */
+}
+
+.Nav-Item-Order_Online:hover {
+    border-width: 5px; /* Increase border width on hover */
+}
+
+
+/* Slider section */
+.slider img {
+    width: 100%;
+    height: 75vh; /* Adjusted height to maintain aspect ratio */
+}
+
+.slider-container {
+    width: 100%;
+    margin: 0 auto; /* Center the slider horizontally */
+    overflow: hidden; /* Hide overflow for smooth sliding */
+    position: relative; /* Needed for button positioning */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.8s ease-in-out; /* Smooth transition on slide change */
+}
+
+.slide {
+    flex: 0 0 100%; /* Make slides equal width to container */
+    position: relative; /* Needed for info overlay positioning */
+}
+
+.slide-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    text-align: center;
+}
+
+.slide-info h3,
+.slide-info p {
+    margin: 5px;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Center buttons vertically */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5; /* Semi-transparent initially */
+    transition: opacity 0.2s ease-in-out;
+    font-size: 24px; /* Adjust button size */
+}
+
+.prev-btn {
+    left: 10px; /* Position left button */
+}
+
+.next-btn {
+    right: 10px; /* Position right button */
+}
+
+.slider-container:hover .prev-btn,
+.slider-container:hover .next-btn {
+    opacity: 1; /* Buttons become fully visible on hover */
+}
+
+.slider .slide:nth-child(1) { /* Make first slide initially active */
+    transform: translateX(0);
+}
+
+.slider-food-title{
+    font-size: 2rem;
+}
+
+/* Dropdown for locations */
+/* Add styles for dropdown menu (optional) */
+.locations-dropdown {
+    position: absolute;
+    top: 100%;  
+    left: 0;
+    display: none;  /* Hide initially */
+    background-color:#f5f5f5; 
+    padding: 10px;
+    list-style: none;
+    border: 1px solid #ccc;  
+}
+
+.NavBar-Items-secondary-color {
+    position: relative; /* Position relative for containing dropdown */
+}
+
+.locations-dropdown.active {
+    display: flex;  /* Display when active */
+}
+
+/*  */
+/* -------------------------- *//* -------------------------- */
+/*Order Online Page Label */
+
+.online-order-label-HomePage{
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+
+.online-order-label-HomePage{
+   text-align: center;
+   text-transform: uppercase;
+}
+.online-order-label-HomePage h1{
+    background-color:#e0bfa8;
+    display: inline-block;
+    padding: 2vh 20vw;
+    font-weight: 500;
+    font-size: 2.25rem;
+}  
+/* Remove text decoration and set color for the link */
+.online-order-label-HomePage a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style for the element containing the arrow */
+.element1 {
+    border: 2px solid #333;
+    display: inline-block;
+    padding: 18px 65px;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Style for the arrow */
+.arrow-Animation {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    animation: none; /* Initially disable animation */
+    border: 2px solid #333;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 20px;
+}
+
+/* Add margin-right to adjust the position of the arrow */
+.Takeout_Delivery {
+    margin-right: 15px;
+    padding-right: 15px;
+}
+
+/* Enable animation on hover */
+.element1:hover .arrow-Animation {
+    animation: arrowToggle 0.75s infinite alternate; /* Smooth animation */
+}
+
+/* Keyframes for arrow animation */
+@keyframes arrowToggle {
+    0% {
+        right: 10px; /* Initial position */
+    }
+    100% {
+        right: 0; /* Final position */
+    }
+}
+
+
+.Locations:hover,
+.Reservation:hover,
+.Private-parties:hover,
+.Menu:hover,
+.Our-story:hover {
+    color: gray; 
+}
+
+
+/* -------------------------- *//* -------------------------- */
+/* Reservations  *//* About Us */
+.c-split__image img{
+    height: 75vh;
+    width: 35vw;
+}
+.c-split {
+    display: flex;
+    background-color: #dcedc8;
+    margin-bottom: 15vh;
+}
+
+.c-split__col {
+    flex: 1;
+}
+
+.c-split__image {
+    background-size: cover;
+    height: 100%;
+    width: 35.75vw;
+    background-color: #f5f5f5;
+    margin-left: 0.75vw;
+}
+
+.c-split__content {
+    padding: 20px;
+    padding-top: 12vh;
+}
+.c-split__content h2,.Takeout_Delivery{
+   text-transform: uppercase;
+   color: #333;
+}
+
+.c-split__heading {
+    font-size: 2.5rem;
+}
+.about-us-section .c-split__col .c-split__col-inner .c-split__content .ubuntu-regular{
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* ----------Our Story---------------- *//* -------------------------- */
+
+.our-story-home {
+    position: relative;
+    background-image: url("./images/homepage/our-story.png");
+    height: 75vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dimming the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay .ubuntu-regular,.overlay .arrow-Animation{
+    color: white;
+    border-color: white;
+}
+.overlay-text {
+
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+/* -------------------------- *//* -------------------------- */
+/* Pictures inside homepage bottom*/
+.instagram-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.instagram-grid__item {
+    margin: 10px;
+    overflow: hidden;
+}
+
+.instagram-grid__item img {
+    width: 23vw;
+    height: 60vh;
+    transition: transform 0.3s ease;
+}
+
+.instagram-grid__item:hover img {
+    transform: scale(1.1);
+}
+
+/* -------------------------- *//* -------------------------- */
+/* Footer Styles */
+.site-footer {
+    background-color:  #e0bfa8; 
+    padding: 30px 0;
+}
+
+.site-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-footer ul.social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.site-footer ul.social-links li {
+    margin-right: 30px;
+}
+
+.site-footer ul.social-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-footer nav.site-nav ul.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Email-Class-Footer{
+    padding: 20px;
+    border: 2px solid white;
+    font-size: 1.2rem;
+}
+
+.footer-nav-menu nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+#Footer-Menu{
+    margin-right: 20px;
+}
+
+.site-footer{
+    margin:10px ;
+}
+
+.site-footer-secondary{
+    font-weight: 200;
+    text-align: center;
+    margin: 15px;
+    font-size: 0.9rem;
+}
+
+.social-links img{
+    height: 30px;
+    width: 30px;
+}
+
+.contact-us:hover,.special-events:hover,.news-and-updates:hover{
+    color: grey;
+}
+.Email-Class-Footer {
+    padding: 20px;
+    border: 2px solid white;
+    font-size: 1.2rem;
+    transition: border-width 0.3s; /* Add transition for border width */
+}
+
+.Email-Class-Footer:hover {
+    border-width: 5px; /* Increase border width on hover */
+}
+
